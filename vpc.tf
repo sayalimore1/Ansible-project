@@ -1,18 +1,10 @@
-resource "aws_vpc" "Demo-VPC" {
 
-cidr_block       = "10.0.0.0/16"
+resource "aws_s3_bucket" "bucket" {
 
-  instance_tenancy = "default"
-
-
- tags = {
-
-    Name = "ansible_tf_Project"
-
-    Purpose = "Demo_Project"
-
-    Owner = "Sayali"
-
+  
+  bucket = "eks-projectt-12"
+  tags = {
+    Name        = "eks-projectt-1"
+    Owner       = "sayali"
   }
-
 }
