@@ -1,4 +1,4 @@
-resource "aws_vpc" "VPC_TFANS_Demo" {
+resource "aws_vpc" "Demo-VPC" {
 
 cidr_block       = "10.0.0.0/16"
 
